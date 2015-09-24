@@ -2,6 +2,11 @@ module.exports = isNumeric;
 
 
 function isNumeric(ch) {
-    var charCode = ch.charCodeAt(0);
+    return isNumericCode(ch.charCodeAt(0));
+}
+
+isNumeric.code = isNumericCode;
+
+function isNumericCode(charCode) {
     return charCode >= 0x30 && charCode <= 0x39;
 }

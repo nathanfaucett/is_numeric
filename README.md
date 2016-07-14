@@ -1,4 +1,4 @@
 isNumeric
 =======
 
-is numeric for the browser and node.js
+checks if character is numeric
